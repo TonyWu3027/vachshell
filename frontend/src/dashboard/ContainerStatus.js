@@ -60,7 +60,7 @@ const useStyles = makeStyles({
 export default function ContainerStatus() {
   const classes = useStyles();
 
-  const [temp, setTemp] = useState(20);
+  const [temp, setTemp] = useState(15);
   const [efficacy, setEfficacy] = useState(true);
 
   return (
