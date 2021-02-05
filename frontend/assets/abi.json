@@ -1,0 +1,85 @@
+[
+	{
+		"inputs": [],
+		"name": "init",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "kill",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int8",
+				"name": "_temp",
+				"type": "int8"
+			}
+		],
+		"name": "setTemp",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4[]",
+				"name": "_vaccines",
+				"type": "bytes4[]"
+			}
+		],
+		"name": "updateVaccines",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "containers",
+		"outputs": [
+			{
+				"internalType": "int8",
+				"name": "temp",
+				"type": "int8"
+			},
+			{
+				"internalType": "bool",
+				"name": "efficacy",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "vaccinesAt",
+		"outputs": [
+			{
+				"internalType": "bytes4[]",
+				"name": "",
+				"type": "bytes4[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
