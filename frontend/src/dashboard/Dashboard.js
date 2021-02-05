@@ -26,8 +26,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 
 /* Components */
 import VaccineMap from './VaccineMap';
-import Deposits from './Deposits';
-import Orders from './Orders';
+import ContainerStatus from './ContainerStatus';
 
 function Copyright() {
   return (
@@ -119,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
   },
   fixedHeight: {
-    height: 500,
+    height: 680,
   },
 }));
 
@@ -188,19 +187,10 @@ export default function Dashboard() {
             {/* Recent Deposits */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
-              </Paper>
-            </Grid>
-            {/* Recent Orders */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Orders />
+                <ContainerStatus />
               </Paper>
             </Grid>
           </Grid>
-          <Box pt={4}>
-            <Copyright />
-          </Box>
         </Container>
       </main>
     </div>
